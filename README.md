@@ -7,13 +7,13 @@
 
 # Deep Reinforcement Learning Project: Continuous Control
 
-### Project Details
+## Project Details
 This project aims to train an agent to move to target locations and  maintain its position at the target location in a virtual environment (Reacher environment) for as many time steps as possible.
 
 The trained agent in this project is a Deep Deterministic Policy Gradient (DDPG) based agent.
 
 ![Trained Agent][image1]
-#### The Environment
+### The Environment
 The environment chosen for the project is similar but not identical to the version of the  [Reacher Environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher)  from the Unity ML-Agents toolkit.
 * This environment contains 20 identical agents, each with its own copy of the environment.  
 
@@ -28,9 +28,9 @@ The environment chosen for the project is similar but not identical to the versi
 
 - The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
-### Getting Started
-#### Downloading the environment
-Download the environment from one of the links below. You need only select the environment that matches your operating system (this project uses 20 agents version of Reacher environment):
+## Getting Started
+### Downloading the environment
+1. Download the environment from one of the links below. You need only select the environment that matches your operating system (this project uses 20 agents version of Reacher environment):
 
 Platform | Link
 -------- | -----
@@ -39,12 +39,12 @@ Mac OSX           | [Link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/R
 Windows (32-bit)  | [Link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
 Windows (64-bit)  | [Link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
     
-(_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+* (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
-(_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
+* (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-Unzip (or decompress) the downloaded file and store the path of the executable as we will need the path to input on `Continuous_Control.ipynb`. 
-#### Dependencies
+2. Unzip (or decompress) the downloaded file and store the path of the executable as we will need the path to input on `Continuous_Control.ipynb`. 
+### Dependencies
 Please follow the instructions on [DRLND Github repository](https://github.com/udacity/deep-reinforcement-learning#dependencies) to install the required libraries.
-### Instructions
+## Instructions
 Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!
