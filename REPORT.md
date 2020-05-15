@@ -18,7 +18,7 @@ This report consists of the following sections:
 * [2. Implementation](#2-implementation)
     * [2.1 Actor-Critic model](#21-actor-critic-model)
 	    * [2.1.1 Actor model](#211-actor-model)
-	    * [2.1.2 Critic model](#211-critic-model)
+	    * [2.1.2 Critic model](#212-critic-model)
     * [2.2 Experience replay](#22-experience-replay)
     * [2.3 OUNoise](#23-ounoise)
     * [2.4 MADDPGN Agent](#24-maddpg-agent)
@@ -202,7 +202,8 @@ With the above implementations, the DDPG agent is implemented in `ddpg_agent.py`
 - `MADDPGAgent.step()` 
     - Store a step taken by the agent (state, action, reward, next_state, done) in the Memory
     - Every 20 steps ( of all the agents and if their are enough experiences available in the Replay Buffer), sample the experiences from the Replay Buffer and `learn()` from that
-- `MADDPGAgent.learn()` which updates the policy and value parameters. Then, `soft_update()` the networks
+- `MADDPGAgent.learn()` which updates the policy and value parameters. This process follows the process described in the [Deep Reinforement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
+![Actor-Critic](./images/actor-critic.png)
 - `MADDPGAgent.soft_update()` copy the weights of the local networks to the target networks based on the rule described below:
 ![image](https://user-images.githubusercontent.com/18066876/79749721-fcf6c400-830f-11ea-9bb1-5295231b73c5.png)
  #### Hyper Parameters
@@ -224,9 +225,7 @@ The hyperparameters are self-described.
 
 ### 2.5 Training
 
-The training process is implemented in the `Continuous_Control.ipynb` notebook. The algorithm follows the process described in the [Deep Reinforement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
-
-![DQN-Algorithm](./images/DQN.png)
+The training process is implemented in the `Continuous_Control.ipynb` notebook. The algorithm is implemented as follow:
 
 ```python
 def train_ddpg(n_episodes=2000, max_t=1000, eps_start=1.0, eps_decay=1e-5, eps_end=0.1):
@@ -296,7 +295,7 @@ This section presents the result of training and testing our DDPG agent.
 
 #### Training scores
 
-![training_result](./images/result.png)
+![training_result](./images/results.png)
 
 ## 4. Future works
 
