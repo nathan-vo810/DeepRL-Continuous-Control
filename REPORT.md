@@ -291,7 +291,7 @@ def train_ddpg(n_episodes=2000, max_t=1000, eps_start=1.0, eps_decay=1e-5, eps_e
 ```
 ## 3. Results
 
-This section presents the result of training and testing our DDPG agent. 
+This section presents the result of training our DDPG agent. 
 
 #### Training scores
 
