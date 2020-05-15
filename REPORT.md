@@ -21,7 +21,7 @@ This report consists of the following sections:
 	    * [2.1.2 Critic model](#212-critic-model)
     * [2.2 Experience replay](#22-experience-replay)
     * [2.3 OUNoise](#23-ounoise)
-    * [2.4 MADDPGN Agent](#24-maddpg-agent)
+    * [2.4 MADDPG Agent](#24-maddpg-agent)
     * [2.5 Training](#25-training)
 
 * [3. Results](#3-results)
